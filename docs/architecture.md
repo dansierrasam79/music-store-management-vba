@@ -1,89 +1,69 @@
-# Music*Store Management System Architectu*e
+# Music Store Management System Architecture
 
 ## Overview
-
-The application fo*lows a layered architecture consis*ing of:
-
+The application follows a layered architecture consisting of:
 - User Interface Layer
-- *usiness Logic Layer
+- Business Logic Layer
 - Data Layer
-
-*--
+---
 
 ## User Interface
-
-### frmMain*enu
-
+### frmMainMenu
 Application navigation hub.
 
-*## frmInventory
-
-Inventory CRUD op*rations.
+### frmInventory
+Inventory CRUD operations.
 
 ### frmSales
+Sales transaction processing.
 
-Sales tran*action processing.
-
-### frmDashboa*d
-
+### frmDashboard
 Business analytics.
 
-### frmRep*rts
-
+### frmReports
 Report generation.
 
-### frmAb*ut
-
+### frmAbout
 Application information.
 
 ---
-*## Business Logic
-
-### modInventor*
-
+### Business Logic
+### modInventory
 Inventory operations.
-
-- AddReco*d()
+- AddRecord()
 - GetRecordByID()
-- UpdateReco*d()
+- UpdateRecord()
 - DeleteRecord()
 
-### modSales*
+### modSales
 Sales operations.
-
 - AddSale()
-- *ecordSale()
+- RecordSale()
 - GetSaleByID()
-- GetT*talRevenue()
+- GetTotalRevenue()
 
 ### modReports
-
-Repo*t generation.
+Report generation.
 
 - Inventory Report
-* Low Stock Report
+- Low Stock Report
 - Sales Report
--*Revenue Summary
+- Revenue Summary
 
 ---
 
-## Class Mod*les
+## Class Modules
 
 ### clsMusicRecord
-
-Represent* an inventory item.
+Represents an inventory item.
 
 ### clsSale
-
-*epresents a sales transaction.
-
---*
+Represents a sales transaction.
+---
 
 ## Data Storage
-
 Excel Tables:
-
-* tblInv
+- tblinv
 - tblSales
 - tblCustomers
-* tblSettings
+- tblSettings
